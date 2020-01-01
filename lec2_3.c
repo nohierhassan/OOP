@@ -25,7 +25,7 @@ class complex
   friend complex operator +(int n , complex & c);
   operator int();
 };
-int main()
+int main() 
 { clrscr();
   complex c1,c2,c3;
   c1.set_complex(5,3);
@@ -108,7 +108,7 @@ complex complex::operator ++(int d)
 	return old;
 }
 
-complex & complex :: operator =(complex &c)
+complex & complex :: operator =(complex &c) 
 {       cout<<"operator overloading"<<endl;
 	this->real=c.real;
 	this->img = c.img;
